@@ -60,4 +60,10 @@ public class TransaccionControlador {
 		return new ResponseEntity(new String(saldo +"Listo"), HttpStatus.OK);
 	}
 	
+	@GetMapping("/intereses")
+	public ResponseEntity<Integer> calIntereses() {
+		transaccionServicio.calIntereses();
+		return new ResponseEntity(new String("Listo"), HttpStatus.OK);
+	}
+	
 }

@@ -45,4 +45,12 @@ public class TransaccionServicio {
 		}
 	}
 	
+	public void calIntereses() {
+		try {
+			transaccionRepo.intereses();
+		} catch (Exception e) {
+
+		}
+	}
+	
 }

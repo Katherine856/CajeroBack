@@ -24,6 +24,6 @@ public interface TransaccionRepositorio extends JpaRepository<Transaccion, Integ
 	public void consignar(@Param("numCuenta") Integer numCuenta, @Param("numCuentaDestino") Integer numCuentaDestino, @Param("monto") Integer monto);
 
 	@Query(value = "CALL CAL_INTERES()", nativeQuery = true)
-	public void retirar();
+	public void intereses();
 	
 }
